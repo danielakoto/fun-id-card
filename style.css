@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(32, 32, 32);
+}
+.id {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid rgb(0, 0, 0);
+    width: 50%;
+    height: 30%;
+    max-width: 580px;
+    max-height: 300px;
+    min-width: 300px;
+    min-height: 150px;
+    border-radius: 10px;
+    background-image: url("adventime.jpg");
+}
+
+.pic {
+    margin: 0;
+    position: absolute;
+    top: 6%;
+    left: -5%;
+    background-color: rgba(255, 255, 255, 0);
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+}
+
+.info {
+    margin: 1%;
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    border: 2px solid rgba(122, 122, 122, 0.164);
+    background-color: rgba(252, 255, 240, 0.603);
+    width: 50%;
+    height: 75%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 2%;
+}
+
+h4 {
+    margin: 2%;
+    font-size: 100%;
+}
+
+p {
+    margin: 2%;
+    font-size: 90%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.qr {
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 10.6%;
+    width: 19%;
+    height: 34%;
+}
