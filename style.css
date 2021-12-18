@@ -1,24 +1,9 @@
 body{
     background-color: rgb(32, 32, 32);
 }
-.id {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 3px solid rgb(0, 0, 0);
-    width: 50%;
-    height: 30%;
-    max-width: 580px;
-    max-height: 300px;
-    min-width: 300px;
-    min-height: 150px;
-    border-radius: 10px;
-    background-image: url("adventime.jpg");
-}
 
 .pic {
+    z-index: 5;
     margin: 0;
     position: absolute;
     top: 6%;
@@ -30,6 +15,7 @@ body{
 }
 
 .info {
+    z-index: 5;
     margin: 1%;
     position: absolute;
     top: 10%;
@@ -42,29 +28,74 @@ body{
 }
 
 h2 {
+    z-index: 5;
     margin: 2%;
 }
 
 h4 {
+    z-index: 5;
     margin: 2%;
     font-size: 100%;
 }
 
 p {
+    z-index: 5;
     margin: 2%;
     font-size: 90%;
 }
 
 a {
+    z-index: 5;
     text-decoration: none;
     color: black;
 }
 
 .qr {
+    z-index: 5;
     margin: 0;
     position: absolute;
     top: 55%;
     left: 10.6%;
     width: 19%;
     height: 34%;
+}
+
+.container {
+    z-index: 0;
+    width: 400px;
+    height: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.id {
+    z-index: 5;
+    margin: 0;
+    border: 3px solid rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: url("adventime.jpg");
+}
+
+.card {
+    border-radius: 20px;
+    background-color: transparent;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    
+    --x-pos: 0;
+    --y-angle: calc(var(--x-pos) * 5deg);
+    
+    --y-pos: 0;
+    --x-angle: calc(var(--y-pos) * 5deg);
+    
+    transform: 
+        perspective(300px)
+        rotateY(var(--y-angle))
+        rotateX(var(--x-angle));
 }
